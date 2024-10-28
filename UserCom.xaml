@@ -1,0 +1,18 @@
+ // xaml<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobile1.UserCom">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10">
+            <Label Text="????????" FontSize="24" HorizontalOptions="Center" />
+
+            <Entry x:Name="PhoneEntry" Placeholder="??????? ???????" Keyboard="Telephone" />
+            <Entry x:Name="EmailEntry" Placeholder="??????? email" Keyboard="Email" />
+            <Entry x:Name="MessageEntry" Placeholder="??????? ?????????" />
+
+            <Button Text="????????? SMS" Clicked="Saada_sms_Clicked" />
+            <Button Text="????????? Email" Clicked="Saada_email_Clicked" />
+            <Button Text="?????????" Clicked="Helista_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

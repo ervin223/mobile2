@@ -1,0 +1,19 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LanguageApp.AddEditWordPage"
+             Title="Добавить или изменить слово">
+
+    <StackLayout Padding="20">
+        <Entry x:Name="TextEntry" Placeholder="Слово" Text="{Binding Text}"/>
+        <Entry x:Name="TranslationEntry" Placeholder="Перевод" Text="{Binding Translation}"/>
+        <Editor x:Name="ExplanationEntry" Placeholder="Объяснение" Text="{Binding Explanation}"/>
+        <Picker x:Name="CategoryPicker" Title="Категория" SelectedItem="{Binding Category}">
+            <Picker.Items>
+                <x:String>обучение</x:String>
+                <x:String>выучено</x:String>
+                <x:String>повторение</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button Text="Сохранить" Clicked="OnSaveButtonClicked"/>
+    </StackLayout>
+</ContentPage>
